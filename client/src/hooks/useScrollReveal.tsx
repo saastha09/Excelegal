@@ -8,14 +8,11 @@ export const useScrollReveal = (options = { threshold: 0.1 }) => {
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
-        if (entry.isIntersecting) {
-          setIsInView(true);
-          
-          // Disconnect the observer after element is in view
-          if (ref.current) {
-            observer.unobserve(ref.current);
-          }
-        }
+        // Update isInView state based on current visibility
+        setIsInView(entry.isIntersecting);
+        
+        // Do not disconnect the observer to allow for re-animation
+        // when elements enter and exit the viewport
       },
       {
         threshold: options.threshold,

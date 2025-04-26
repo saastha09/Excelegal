@@ -1,33 +1,24 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
+import AnimatedSection from './AnimatedSection';
 
 const WhatWeDo: React.FC = () => {
-  const [ref1, inView1] = useScrollReveal();
-  const [ref2, inView2] = useScrollReveal();
-  const [ref3, inView3] = useScrollReveal();
-  const [titleRef, titleInView] = useScrollReveal();
-
   return (
     <section id="what-we-do" className="py-16 md:py-24 bg-[#0a0a23]">
       <div className="container mx-auto px-4 md:px-6">
-        <motion.h2 
-          ref={titleRef}
+        <AnimatedSection 
           className="text-3xl md:text-4xl font-bold text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          animate={titleInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          direction="up"
+          delay={0.2}
         >
-          What We Do
-        </motion.h2>
+          <h2>What We Do</h2>
+        </AnimatedSection>
         
         {/* Block 1 */}
-        <motion.div 
-          ref={ref1}
+        <AnimatedSection 
           className="flex flex-col md:flex-row gap-10 items-center mb-20"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView1 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          direction="up"
+          delay={0.3}
+          threshold={0.2}
         >
           <div className="md:w-1/2 order-2 md:order-1">
             <h3 className="text-2xl font-bold text-[#0d6efd] mb-4">Help To Grow Business</h3>
@@ -48,15 +39,14 @@ const WhatWeDo: React.FC = () => {
               />
             </div>
           </div>
-        </motion.div>
+        </AnimatedSection>
         
         {/* Block 2 */}
-        <motion.div 
-          ref={ref2}
+        <AnimatedSection 
           className="flex flex-col md:flex-row gap-10 items-center mb-20"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView2 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          direction="up"
+          delay={0.4}
+          threshold={0.2}
         >
           <div className="md:w-1/2">
             <div className="rounded-lg overflow-hidden transform transition duration-500 hover:scale-105">
@@ -77,15 +67,14 @@ const WhatWeDo: React.FC = () => {
               Learn more <i className="fas fa-arrow-right ml-2"></i>
             </button>
           </div>
-        </motion.div>
+        </AnimatedSection>
         
         {/* Block 3 */}
-        <motion.div 
-          ref={ref3}
+        <AnimatedSection 
           className="flex flex-col md:flex-row gap-10 items-center"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView3 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          direction="up"
+          delay={0.5}
+          threshold={0.2}
         >
           <div className="md:w-1/2 order-2 md:order-1">
             <h3 className="text-2xl font-bold text-[#0d6efd] mb-4">24/7 Support</h3>
@@ -106,7 +95,7 @@ const WhatWeDo: React.FC = () => {
               />
             </div>
           </div>
-        </motion.div>
+        </AnimatedSection>
       </div>
     </section>
   );

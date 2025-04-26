@@ -47,14 +47,13 @@ const Navbar: React.FC = () => {
         )}
       >
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
-          <Link href="/">
-            <a className="text-2xl font-bold font-poppins text-white flex items-center">
-              <span className="text-[#0d6efd] mr-1">Excel</span>egal
-            </a>
-          </Link>
+          <div className="text-2xl font-bold font-poppins text-white flex items-center">
+            <span className="text-[#0d6efd] mr-1">Excel</span>egal
+          </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
+            <button onClick={() => handleNavLinkClick('hero')} className="text-white hover:text-[#0d6efd] transition-colors duration-300">Home</button>
             <button onClick={() => handleNavLinkClick('about')} className="text-white hover:text-[#0d6efd] transition-colors duration-300">About Us</button>
             <button onClick={() => handleNavLinkClick('services')} className="text-white hover:text-[#0d6efd] transition-colors duration-300">Services</button>
             <button onClick={() => handleNavLinkClick('case-studies')} className="text-white hover:text-[#0d6efd] transition-colors duration-300">Case Studies</button>
@@ -88,6 +87,7 @@ const Navbar: React.FC = () => {
               <i className="fas fa-times text-xl"></i>
             </button>
             <div className="clear-both pt-10 flex flex-col space-y-4">
+              <button onClick={() => handleNavLinkClick('hero')} className="text-white hover:text-[#0d6efd] transition-colors duration-300 py-2 text-left">Home</button>
               <button onClick={() => handleNavLinkClick('about')} className="text-white hover:text-[#0d6efd] transition-colors duration-300 py-2 text-left">About Us</button>
               <button onClick={() => handleNavLinkClick('services')} className="text-white hover:text-[#0d6efd] transition-colors duration-300 py-2 text-left">Services</button>
               <button onClick={() => handleNavLinkClick('case-studies')} className="text-white hover:text-[#0d6efd] transition-colors duration-300 py-2 text-left">Case Studies</button>
