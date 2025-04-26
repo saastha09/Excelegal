@@ -1,0 +1,159 @@
+Design a professional, dark theme website for a software consulting company named Excelegal.
+
+Overall Style:
+
+Modern dark background (dark navy #0a0a23), blue accents (#0d6efd), and clean white text.
+
+Full smooth animations throughout the site:
+
+Fade-in on scroll
+
+Section slide-up animations
+
+Button hover animations (scale, glow)
+
+Image slight zoom-in effect on hover
+
+Parallax scrolling effects where suitable
+
+Animated counters
+
+Soft, rounded corners for cards, buttons, and forms.
+
+Navbar:
+
+Logo "Excelegal" left side.
+
+Menu items: About Us | Services | Solutions | Case Studies | Career | Contact Us
+
+Sticky on scroll with smooth background transition.
+
+Hero Section:
+
+Full-screen dark blurred tech/business background.
+
+Large heading: "Consult Your Software Solution Idea With Us".
+
+Subheading about trust, innovation, and affordability.
+
+Two animated buttons: "Get Started" and "Explore Now".
+
+What We Do Section:
+
+Title: "What We Do" (Center aligned with fade-up animation).
+
+Three service blocks with alternate left-right image/text layout:
+
+Help To Grow Business
+
+Business Consultancy
+
+24/7 Support
+
+Each block appears with a sliding animation on scroll.
+
+About Us Section:
+
+Title: "Technological Solutions Tailored for the New Digital Era".
+
+Short intro about Excelegal started in 2019, innovation, and client trust.
+
+Group team image with slow zoom effect on hover.
+
+Statistics Section:
+
+Animated counters for:
+
+850+ Days Worked
+
+40+ Employees
+
+160+ Projects Completed
+
+225+ Clients Satisfied
+
+Counters count up smoothly when visible.
+
+Service Offering Section:
+
+6 animated service cards:
+
+Cloud Consulting
+
+Digital Marketing
+
+Custom Web Development
+
+Mobile App Development
+
+Software Testing
+
+24/7 Customer Support
+
+Each card lifts slightly and glows on hover.
+
+Projects Section:
+
+Display 4 creative project cards (custom names, no real companies).
+
+Slide-in and hover-zoom animations.
+
+Reviews Section:
+
+3 animated testimonial cards with client photos and feedback.
+
+Cards slide-up and slightly rotate into place.
+
+Clients Section:
+
+Show "Client 1", "Client 2", "Client 3", etc. in animated badge-style cards (no real company logos).
+
+Fade-in on scroll.
+
+Career Page:
+
+Title: "Join Our Team at Excelegal".
+
+Career intro encouraging freshers and students.
+
+Animated job application form fields:
+
+Full Name
+
+Email
+
+Contact Number
+
+Upload Resume (only PDF, DOC accepted)
+
+Submit Button ("Apply Now" with hover effect)
+
+Resume uploads to database or email (as per backend setup).
+
+Contact Us Section:
+
+Contact form with First Name, Last Name, Email, Phone, and Message fields.
+
+Animated appearance and smooth validation.
+
+Show company's address, email ID, and phone number.
+
+Footer:
+
+Quick navigation links.
+
+Animated social media icons (Facebook, Instagram, LinkedIn).
+
+Copyright: "© All Rights Reserved. Designed and Developed by Excelegal."
+
+Special Features:
+
+Fully Responsive (mobile, tablet, desktop)
+
+SEO optimized structure
+
+Fast loading animations
+
+Smooth scrolling enabled across site
+
+Scroll-to-top button with animation
